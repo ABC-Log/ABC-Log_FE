@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>경험 기록 | CareerLog</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/experience.css" />
+    <script src="../js/common.js" defer></script>
+    <script src="../js/experience.js" defer></script>
+  </head>
+  <body>
+    <div id="site-header"></div>
+    <main id="main">
+      <section class="page-hero">
+        <div class="wrap">
+          <p class="eyebrow">MY EXPERIENCE</p>
+          <h1>경험 기록</h1>
+          <p>
+            어디서 일했는지보다, 무엇을 했고 무엇을 배웠는지가 중요해요. 여러
+            아르바이트 경험을 하나씩 기록해 보세요.
+          </p>
+        </div>
+      </section>
+      <section class="content-section wrap">
+        <div class="grid-two experience-layout">
+          <div>
+            <div class="section-title">
+              <h2>새 경험 적기</h2>
+              <p>기억나는 것부터 편하게 작성하세요.</p>
+            </div>
+            <form id="experience-form" class="panel">
+              <input type="hidden" id="edit-id" />
+              <div class="field">
+                <label for="workplace">일한 곳 *</label
+                ><input
+                  id="workplace"
+                  maxlength="60"
+                  placeholder="예: 동네 카페"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="role">맡은 일 *</label
+                ><input
+                  id="role"
+                  maxlength="80"
+                  placeholder="예: 주문 접수와 음료 제조"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="period">근무 기간</label
+                ><input
+                  id="period"
+                  maxlength="60"
+                  placeholder="예: 2025.03 ~ 2025.08"
+                />
+              </div>
+              <div class="field">
+                <label for="detail">내가 실제로 한 일 *</label
+                ><textarea
+                  id="detail"
+                  maxlength="500"
+                  placeholder="구체적인 업무, 해결한 문제, 기억나는 성과를 적어 보세요."
+                  required
+                ></textarea>
+              </div>
+              <div class="field">
+                <label for="skills">사용한 역량</label
+                ><input
+                  id="skills"
+                  maxlength="150"
+                  placeholder="예: 소통, 협업, 문제 해결"
+                /><span class="hint"
+                  >쉼표로 구분해 주세요. 역량 정리 화면에 모입니다.</span
+                >
+              </div>
+              <button class="button primary" type="submit" id="save-button">
+                경험 저장하기</button
+              ><button
+                class="button secondary"
+                type="button"
+                id="cancel-button"
+                hidden
+              >
+                수정 취소
+              </button>
+              <p class="status" id="form-status" role="status"></p>
+            </form>
+          </div>
+          <div>
+            <div class="section-title">
+              <h2>나의 경험 <span id="experience-count">0</span></h2>
+              <p>기록은 현재 브라우저에 저장됩니다.</p>
+            </div>
+            <div id="experience-list"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="site-footer"></div>
+  </body>
+</html>
