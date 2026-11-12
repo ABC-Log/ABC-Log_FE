@@ -1,4 +1,4 @@
-var STORAGE_KEY = "careerlog_experiences";
+var STORAGE_KEY = "ABCLog_experiences";
 
 function getExperiences() {
   try {
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var footerSlot = document.getElementById("site-footer");
   if (footerSlot)
     footerSlot.innerHTML =
-      '<footer class="site-footer"><div class="wrap footer-inner"><strong>CareerLog</strong><p>오늘의 경험을 내일의 경력으로</p><span>노동 정보는 일반 안내입니다. 개별 사안은 고용노동부에 문의하세요.</span></div></footer>';
+      '<footer class="site-footer"><div class="wrap footer-inner"><strong>ABCLog</strong><p>오늘의 경험을 내일의 경력으로</p><span>노동 정보는 일반 안내입니다. 개별 사안은 고용노동부에 문의하세요.</span></div></footer>';
   var current = location.pathname.split("/").pop() || "index.html";
   var links = document.querySelectorAll(".site-header nav a");
   for (var i = 0; i < links.length; i++) {
