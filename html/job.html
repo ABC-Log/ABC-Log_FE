@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>직무 탐색 | CareerLog</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/job.css" />
+    <script src="../js/common.js" defer></script>
+    <script src="../js/job.js" defer></script>
+  </head>
+  <body>
+    <div id="site-header"></div>
+    <main id="main">
+      <section class="page-hero">
+        <div class="wrap">
+          <p class="eyebrow">EXPLORE YOUR PATH</p>
+          <h1>직무 탐색</h1>
+          <p>
+            아르바이트 경험에서 사용한 역량이 어떤 직무로 이어질 수 있는지
+            살펴보세요.
+          </p>
+        </div>
+      </section>
+      <section class="content-section wrap">
+        <div class="section-title">
+          <h2>관심 있는 직무 찾기</h2>
+          <p>
+            직무 예시는 탐색을 돕기 위한 안내이며, 채용 추천이나 적합도 판정은
+            아닙니다.
+          </p>
+        </div>
+        <div class="job-toolbar">
+          <label for="job-search">직무 검색</label
+          ><input
+            id="job-search"
+            type="search"
+            placeholder="직무 또는 역량 검색"
+          /><label for="job-filter">분야</label
+          ><select id="job-filter">
+            <option value="all">전체</option>
+            <option value="서비스">서비스</option>
+            <option value="사무">사무</option>
+            <option value="기획">기획</option>
+            <option value="운영">운영</option>
+          </select>
+        </div>
+        <p id="match-note" class="notice"></p>
+        <div id="job-list" class="job-grid"></div>
+      </section>
+    </main>
+    <div id="site-footer"></div>
+  </body>
+</html>
