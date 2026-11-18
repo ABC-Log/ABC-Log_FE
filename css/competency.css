@@ -1,0 +1,33 @@
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.skill-card span {
+  font-size: 1.5rem;
+  color: var(--blue);
+}
+.skill-card h3 {
+  margin: 10px 0 4px;
+}
+.skill-card p {
+  color: var(--muted);
+  margin: 0;
+}
+.skill-grid .empty {
+  grid-column: 1/-1;
+}
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.experience-grid .empty {
+  grid-column: 1/-1;
+}
+@media (max-width: 700px) {
+  .skill-grid,
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+}
