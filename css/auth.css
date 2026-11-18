@@ -1,0 +1,23 @@
+.auth-main {
+  min-height: calc(100vh - 220px);
+  display: grid;
+  place-items: center;
+  background: #f5f8ff;
+  padding: 55px 20px;
+}
+.auth-panel {
+  width: min(100%, 480px);
+}
+.auth-panel h1 {
+  font-size: 2.3rem;
+}
+.auth-panel .button {
+  margin-top: 8px;
+}
+.auth-note {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: 25px 0 15px;
+}
+.auth-submit { width: 100%; }
+.auth-divider { margin: 18px 0 0; text-align: center; }
