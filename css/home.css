@@ -1,0 +1,244 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 55px;
+  min-height: 620px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.hero h1 em {
+  font-style: normal;
+  color: var(--blue);
+}
+.hero-copy {
+  max-width: 565px;
+  font-size: 1.12rem;
+  color: var(--muted);
+}
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.hero-art {
+  height: 430px;
+  border-radius: 32px;
+  position: relative;
+  background:
+    radial-gradient(circle at 70% 30%, #d2e4ff, transparent 35%),
+    linear-gradient(135deg, #eaf1ff, #d5e2fa);
+  overflow: hidden;
+}
+.hero-art:before,
+.hero-art:after {
+  content: "";
+  position: absolute;
+  border: 1px solid rgba(49, 92, 182, 0.16);
+  border-radius: 50%;
+}
+.hero-art:before {
+  width: 420px;
+  height: 420px;
+  left: 70px;
+  top: 45px;
+}
+.hero-art:after {
+  width: 260px;
+  height: 260px;
+  left: 150px;
+  top: 135px;
+}
+.art-card {
+  position: absolute;
+  background: white;
+  border-radius: 17px;
+  padding: 22px;
+  box-shadow: 0 20px 45px rgba(35, 67, 119, 0.17);
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  z-index: 1;
+}
+.art-card strong {
+  font-size: 1.25rem;
+}
+.art-card small {
+  color: var(--muted);
+}
+.art-icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: #e7efff;
+  color: var(--blue);
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+.art-one {
+  top: 73px;
+  left: 54px;
+  width: 205px;
+  transform: rotate(-6deg);
+}
+.art-two {
+  right: 43px;
+  top: 158px;
+  width: 232px;
+  transform: rotate(5deg);
+}
+.art-note {
+  position: absolute;
+  bottom: 44px;
+  left: 63px;
+  color: #385177;
+  z-index: 1;
+  line-height: 1.4;
+}
+.art-note b {
+  color: #173c88;
+  font-size: 1.25rem;
+}
+.section-heading {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.section-heading p:last-child {
+  color: var(--muted);
+}
+.step-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+.step-card {
+  background: white;
+  border: 1px solid var(--line);
+  padding: 26px;
+  border-radius: 18px;
+  min-height: 285px;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+.step-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px #1f3f6b14;
+}
+.step-number {
+  font-size: 0.8rem;
+  font-weight: 900;
+  color: var(--blue);
+}
+.step-emoji {
+  display: block;
+  font-size: 1.8rem;
+  color: var(--blue);
+  margin: 20px 0;
+}
+.step-card p {
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+.card-link,
+.text-link {
+  color: var(--blue);
+  font-weight: 800;
+}
+.home-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 70px;
+}
+.home-split p {
+  max-width: 500px;
+  color: var(--muted);
+}
+.quote-card {
+  padding: 42px;
+  background: #f1f6ff;
+  border-radius: 24px;
+}
+.quote-card span {
+  font-family: Georgia, serif;
+  color: var(--blue);
+  font-size: 4rem;
+  line-height: 1;
+}
+.quote-card p {
+  color: var(--ink);
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+.quote-card small {
+  color: var(--muted);
+}
+.cta-section {
+  background: #244baf;
+  color: white;
+}
+.cta-section .eyebrow {
+  color: #cbd9ff;
+}
+.cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.cta-inner p:last-child {
+  margin-bottom: 0;
+  color: #e2eaff;
+}
+@media (max-width: 850px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .hero-art {
+    height: 330px;
+  }
+  .step-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .home-split {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+@media (max-width: 520px) {
+  .hero {
+    padding-top: 50px;
+  }
+  .hero-art {
+    height: 285px;
+  }
+  .art-one {
+    left: 23px;
+    top: 30px;
+  }
+  .art-two {
+    right: 18px;
+    top: 100px;
+  }
+  .art-note {
+    left: 28px;
+    bottom: 20px;
+  }
+  .step-grid {
+    grid-template-columns: 1fr;
+  }
+  .step-card {
+    min-height: 0;
+  }
+  .cta-inner {
+    display: block;
+  }
+  .cta-inner .button {
+    margin-top: 22px;
+  }
+}

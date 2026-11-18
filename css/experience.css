@@ -1,0 +1,30 @@
+.experience-layout {
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: start;
+}
+.experience-card {
+  margin-bottom: 16px;
+}
+.experience-card small {
+  color: var(--muted);
+}
+.experience-card h3 {
+  margin: 5px 0;
+}
+.experience-card p {
+  white-space: normal;
+  margin: 18px 0;
+}
+.card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 17px;
+}
+.experience-card .badge {
+  margin-bottom: 0;
+}
+@media (max-width: 850px) {
+  .experience-layout {
+    grid-template-columns: 1fr;
+  }
+}
